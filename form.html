@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <form action=""> <!-- Form to collect user information send to backend -->
         <label for="name">Name</label>
         <input type="text" name="name" id="name" placeholder="Enter your name" required>
         <br><br>
@@ -29,8 +29,9 @@
         <input type="radio" name="gender" id="male" value="male" required>
         <label for="male">Male</label>
         <input type="radio" name="gender" id="female" value="female">
+        <!-- Name isimleri aynı olur ise bir tanesi seçilr name isimleri farklı olur ise her bir name alanından bir tanesi seçilir-->
         <label for="female">Female</label>
-        <input type="radio" name="gender" id="other" value="other">
+        <input type="radio" name="gender" checked id="other" value="other"> <!--checked işretli olan sayfa yenilendiğinde veya yüklendiğin de seçili geliyor-->
         <label for="other">Other</label>
         <br><br>
         <label for="dropdown">Select an option</label>
@@ -39,7 +40,7 @@
             <option value="item1">Item 1</option>
             <option value="item2">Item 2</option>
             <option value="item3">Item 3</option>
-            <option value="item4">Item 4</option>
+            <option value="item4" selected>Item 4</option> <!--selected işaretli olan sayfa yenilendiğinde veya yüklendiğin de seçili geliyor-->
         </select>
         <br><br>
         <input type="checkbox" name="subscribe" id="subscribe" required>
